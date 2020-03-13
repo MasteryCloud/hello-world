@@ -1,0 +1,4 @@
+FROM alpine:latest
+RUN apk add --no-cache git musl-dev go
+WORKDIR /opt/build
+ENTRYPOINT ["/usr/bin/go"]
