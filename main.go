@@ -253,6 +253,6 @@ func main() {
 
 	fmt.Println("Running http service at", webPort, "port")
 	http.HandleFunc("/", handler)
-	http.Handle("/img/", http.StripPrefix("/img/", http.FileServer(http.Dir(os.Getenv("PWD") + `/img`))))
+	http.Handle("/img/", http.StripPrefix("/img/", http.FileServer(http.Dir(`/opt/hello-world//img`))))
   log.Fatal(http.ListenAndServe(":" + webPort, nil))
 }
