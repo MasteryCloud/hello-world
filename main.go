@@ -23,7 +23,7 @@ const (
 	webHead = `<html>
   <head>
     <title>MasteryCloud</title>
-    <link rel="icon" href="img/favicon.png type="image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <style>
       body {
         margin: 2em 0em;
